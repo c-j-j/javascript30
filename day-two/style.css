@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: navy;
+  background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  border: 1rem solid white;
+  border-radius: 10rem;
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+
+  box-shadow:
+  0 0 0 4px rgba(0,0,0,0.1),
+  inset 0 0 0 3px #EFEFEF,
+  inset 0 0 10px black,
+  0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.hand {
+  background-color: lime;
+  height: 0.1rem;
+  position: absolute;
+  width: 50%;
+  bottom: 50%;
+  transform: rotate(45deg);
+  transform-origin: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  transition: 0.05s;
+  transition-timing-function: cubic-bezier(0.25, 2.27, 0.65,-0.18);
+}
+
+.hour {
+  width: 30%;
+  left: 20%;
+  background-color: line;
+}
+
+.minute {
+  width: 40%;
+  left: 10%;
+  background-color: lime;
+}
+
+.second {
+  width: 40%;
+  left: 10%;
+  background-color: yellow;
+}
+
+kdb {
+  color: white;
+  font-family: arial;
+}
+
+.twelve {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+}
+
+.six {
+  position: absolute;
+  left: 45%;
+  bottom: 10%;
+}
+
+.three {
+  position: absolute;
+  right: 10%;
+  bottom: 50%;
+}
+
+.nine {
+  position: absolute;
+  left: 10%;
+  bottom: 45%;
+}
