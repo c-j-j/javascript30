@@ -1,0 +1,47 @@
+:root {
+  --blur: 0px;
+  --padding: 10px;
+  --color: #FFFFFF;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: navy;
+  font-family: arial;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  color: var(--color);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-color: red;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: block;
+}
+
+input {
+  10rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+img {
+  filter: blur(var(--blur));
+  padding: var(--padding);
+  background-color: var(--color);
+}

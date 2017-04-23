@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="app.js"></script>
+    <title>Image Editor</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Image Editor</h1>
+      </header>
+      <section class="controls">
+        <section class="control">
+          <label for="blur">Change Blur</label>
+          <input id="blur" class="blur" min="0" max="25" value="0" data-var="blur" data-suffix="px" type="range" />
+        </section>
+        <section class="control">
+          <label for="padding">Change Padding</label>
+          <input id="padding" data-var="padding" min="10" value="10" max="30" data-suffix="px" class="padding" type="range" />
+        </section>
+        <section class="control">
+        <label for="padding">Change Colour</label>
+        <input id="colour" data-var="color" value="#FFFFFF" data-suffix="" type="color" />
+      </section>
+      </section>
+
+      <img height="300px" src="https://static.pexels.com/photos/57832/pexels-photo-57832.jpeg">
+    </main>
+  </body>
+</html>
